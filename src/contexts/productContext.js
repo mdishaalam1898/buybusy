@@ -12,6 +12,7 @@ import {
   onSnapshot,
   updateDoc,
 } from "firebase/firestore";
+import "react-toastify/dist/ReactToastify.css";
 import { toast } from "react-toastify";
 
 // Create contextAPI for product
@@ -47,7 +48,7 @@ export function ProductContext({ children }) {
     let day = date.getDate();
     let month = date.getMonth() + 1;
     let year = date.getFullYear();
-    returnv(`${year}-${month}-${day}`);
+    return `${year}-${month}-${day}`;
   }
   // To check if the user is still logged inon page refresh
   useEffect(() => {
@@ -115,7 +116,7 @@ export function ProductContext({ children }) {
   // Function to add product to cart
   async function addToCart(product) {
     if (!isLoggedIn) {
-      toast.error("Please login first");
+      toast.error("Please login first!");
       return;
     }
     // Checking whether the product already in cart or not
@@ -123,7 +124,7 @@ export function ProductContext({ children }) {
     if (index !== -1) {
       // if product already in cart then increase quantitiy
       increaseQuant(cart[index]);
-      toast.success("product quantity increase");
+      toast.success("product quantity increased!");
       return;
     }
     // Add product to the cart of loggedInusser
@@ -173,7 +174,8 @@ export function ProductContext({ children }) {
   }
   return (
     <productContext.Provider
-      value={{data,
+      value={{
+        data,
         addToCart,
         cart,
         total,

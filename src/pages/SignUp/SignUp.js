@@ -1,9 +1,9 @@
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { UseAuthValue } from "../../contexts/authContext";
-import styles from "./SignUp.module.css"
-// Sign Up page
+import styles from "./SignUp.module.css";
 
+/**    Sign Up page  **/
 export function SignUp() {
   const nameRef = useRef();
   const emailRef = useRef();
@@ -27,7 +27,7 @@ export function SignUp() {
 
   return (
     <div className={styles.container}>
-      <div className={styles.inputForm}>
+      <div className={styles.innerBox}>
         <h1>SignUp</h1>
         <form onSubmit={Submission}>
           <input

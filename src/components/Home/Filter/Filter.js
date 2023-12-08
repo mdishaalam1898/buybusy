@@ -52,7 +52,7 @@ export default function Filter(props) {
             name="category"
             onClick={() => setCategory("electric")}
           />
-          <label for="electric">Electronic</label>
+          <label for="electric">Electronics</label>
 
           {/* jewellery */}
           <input
@@ -63,16 +63,7 @@ export default function Filter(props) {
             onClick={() => setCategory("jewellery")}
           />
           <label for="jewellery">Jewellery</label>
-
-          {/* none  */}
-          <input
-            type="radio"
-            id="none"
-            value="none"
-            name="category"
-            onClick={() => setCategory("none")}
-          />
-          <label for="jewellery">None</label>
+         
         </div>
       </div>
     </div>

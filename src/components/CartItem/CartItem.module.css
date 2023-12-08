@@ -1,115 +1,4 @@
 
-/* ============================== Home.js ================================= */
-
-/* page header containing search bar and button */
-.header{
-    text-align: center;
-    margin-top: 20px;
-}
-
-/* search bar */
-.header input {
-    width: 35%;
-    height: 30px;
-    border-radius: 5px;
-    border: 1px solid aqua;
-    padding: 2px 5px;
-    font-size: 1rem;
-}
-
-/* apply filter button */
-.header button {
-    float: right;
-    margin-right: 5%;
-    height: 32px;
-    width: 100px;
-    font-size: 1rem;
-    border-radius: 4px;
-    border: none;
-    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%);
-    color:white;
-    
-}
-
-
-/* container containing filter bar and product list */
-.mainContainer{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.mainContainer > div {
-    margin: 15px;
-    width: 100%;
-}
-
-
-
-/* ============================ FilterBar.js ==================== */
-
-
-/* filterbar styles */
-.filterBar{
-    box-shadow: 1px 1px 8px 1px grey;;
-    height: 60px;
-    font-size: 1.1rem;
-    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
-    font-weight: 600;
-    display: flex;
-    flex-direction: row;
-    color:#4ca6dd;
-    border-radius: 5px;
-    justify-content: space-around;
-    align-items: center;
-}
-
-/* filter bar heading */
-.filterBar h1{
-    color:#752bc3;
-}
-
-/* sub heading inside filter bar */
-.filterBar span{
-    color:#752bc3;
-}
-
-/* price range to filter items */
-.priceRange{
-    text-align: center;
-}
-
-/* price range slider */
-.priceRange input {
-    width: 100%;
-    height: 5px;
-}
-
-/* category of the products */
-.categoryBox{
-    display: flex;
-}
-
-/* radio buttons inside category */
-.categoryBox input{
-    margin-left: 15px;
-    cursor: pointer;
-}
-
-
-/* =========================== MainContent.js ===================  */
-
-/* container for all the products */
-.itemContainer{
-    display:flex;
-    flex-wrap: wrap;
-    padding:0 6%;
-}
-
-
-
-/* =========================== ItemCard.js ===========================  */
-
-/* single item container */
 .cardContainer{
     display: flex;
     height: 330px;
@@ -123,32 +12,27 @@
     border-radius: 5px;
 }
 
-/* image container of product */
 .imageContainer{
     height: 80%;
     width: 100%;
 }
 
-/* image within the container */
 .imageContainer img{
     width: 100%;
     height: 100%;
 }
 
-/* product description */
 .itemInfo{
     width: 100%;
     height: 20%;
 }
 
-/* container of name and price */
 .namePrice{
     display: flex;
     height: 45%;
     text-align: center;
 }
 
-/* name of the product */
 .name{
     text-align: left;
     width: 75%;
@@ -174,22 +58,19 @@
 .btnContainer button{
     width: 100%;
     height: 100%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border: none;
     border-radius: 5px;
     color: white;
+    background-color: red;
+    text-align: center;
 }
-
-/* add to cart button */
-.addBtn{
-    background-image: linear-gradient(to right, #4CB8C4 0%, #3CD3AD 51%, #4CB8C4 100%);
+.minus{
+    color: red;
 }
-
-/* add button on hovering over it */
-.addBtn:hover{
-    background-image: none;
-    border: 2px solid #4CB8C4;
-    color: #4CB8C4;
-    font-weight: 700;
+.plus{
+    color: green;
 }
-
+.quantity{
+    text-align: center;
+}

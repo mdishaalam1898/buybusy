@@ -5,6 +5,8 @@ import { UseAuthValue } from "../../contexts/authContext";
 import { useRef } from "react";
 import styles from "./SignIn.module.css";
 import { NavLink } from "react-router-dom";
+
+/**SignIn Page */
 export function SignIn() {
   const { SignIn } = UseAuthValue();
   const navigate = useNavigate();
@@ -24,13 +26,12 @@ export function SignIn() {
     const status = await SignIn(data);
 
     // If user sign in redirecting to corredponding page
-    {
-      status ? navigate("/") : navigate("/signin");
-    }
+
+    status ? navigate("/") : navigate("/signin");
   }
   return (
     <div className={styles.container}>
-      <div className={styles.inputForm}>
+      <div className={styles.innerBox}>
         <h1> SignIn</h1>
         <form onSubmit={Submission}>
           <input

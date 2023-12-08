@@ -1,25 +1,18 @@
 
-/* ======================= SignIn.js and SignUp.js ======================= */
-
-
-/* main page container */
+/* ======================= SignUp.js ======================= */
 .container{
     display: flex;
     justify-content:space-around;
     align-items: center;
 }
-
-/* container of input form */
-.inputForm {
+.innerBox {
     width: 250px;
     height: 300px;
     margin-top: 5%;
     text-align: center;
     padding: 5px;
 }
-
-/* input tag within the container */
-.inputForm input {
+.innerBox input {
     width: 95%;
     height: 35px;
     margin-bottom: 5%;
@@ -27,9 +20,7 @@
     font-size: 1rem;
     border: 1px solid aqua;
 }
-
-/* submit button */
-.inputForm button{
+.innerBox button{
     width: 100%;
     height: 35px;
     border-radius: 4px;
@@ -38,15 +29,11 @@
     font-size: 1.2rem;
     background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%);
 }
-
-/* link inside form  */
-.inputForm a{
+.innerBox a{
     color: blueviolet;
     font-size: 1.2rem;
     font-weight: 600;
 }
-
-/* hovering over link */
-.inputForm a:hover{
+.innerBox a:hover{
     color: blue;
 }

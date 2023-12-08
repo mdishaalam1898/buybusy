@@ -10,27 +10,26 @@ export default function MainContent(props) {
 
   return (
     <div className={styles.itemContainer}>
-      {/* filter on the basis of search bar */}
-      {data
-        .filter((item) => {
-          return search.toLocaleLowerCase() === ""
+    {/* filter on the basis of search bar */}
+    {data.filter((item) => {
+            return search.toLocaleLowerCase() === ''
             ? item
-            : item.name.toLocaleLowerCase().includes(search);
-        })
-        // filter on the basis of price range
-        .filter((item) => {
-          return !applyFilter ? item : item.price <= price;
-        })
-        // filter on the basis of category
-        .filter((item) => {
-          return !applyFilter || category === "none"
+            :item.name.toLocaleLowerCase().includes(search)})
+    // filter on the basis of price range
+    .filter((item) => {
+            return !applyFilter
             ? item
-            : item.category === category;
-        })
-        // map to each item of the array
-        .map((item) => (
-          <ItemCard key={item.id} item={item} />
-        ))}
-    </div>
+            :item.price <= price})
+    // filter on the basis of category
+    .filter((item) => {
+            return !applyFilter || category === 'none'
+            ? item
+            :item.category === category})
+    // map to each item of the array
+    .map((item) => <ItemCard 
+                            key={item.id} 
+                            item={item} />)}
+</div>
+
   );
 }

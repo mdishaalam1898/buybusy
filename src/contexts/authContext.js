@@ -5,7 +5,7 @@ import { createContext } from "react";
 import { addDoc, collection, onSnapshot } from "firebase/firestore";
 import { db } from "../firebaseInit";
 import { ToastContainer, toast } from "react-toastify";
-
+import "react-toastify/dist/ReactToastify.css";
 // Create ContextAPI for Authentication
 export const authContext = createContext();
 
@@ -28,7 +28,7 @@ export function AuthContext({ children }) {
 
   // Getting all the users from database
   useEffect(() => {
-    const unSub = onSnapshot(collection(db, "bubusy"), (snapShot) => {
+    const unSub = onSnapshot(collection(db, "buybusy"), (snapShot) => {
       const users = snapShot.docs.map((doc) => {
         return {
           id: doc.id,
@@ -74,7 +74,7 @@ export function AuthContext({ children }) {
     }
     // If email found in database then match password
     if (userList[index].password === data.password) {
-      toast.success("Sign in Successfull!");
+      toast.success("Sign in Successfully!");
 
       // Logging in user and storing its data inlocal variable
       setLoggedIn(true);
@@ -87,7 +87,7 @@ export function AuthContext({ children }) {
     } else {
       // If password does not match in database
 
-      toast.error("Wrong userName/ password, Try again");
+      toast.error("Wrong userName/password, Try again");
       return false;
     }
   }
@@ -118,7 +118,7 @@ export function AuthContext({ children }) {
         SignOut,
       }}
     >
-      <ToastContainer />
+      <ToastContainer/>
       {children}
     </authContext.Provider>
   );

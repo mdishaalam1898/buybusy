@@ -6,13 +6,15 @@ export function Error() {
 
   // Rendering to hamepage after 3 sec
   useEffect(() => {
-    setTimeout(() => {}, 3000);
+    setTimeout(() => {
+      navigate("/");
+    }, 3000);
   }, []);
 
-  return(
-    <div style={{textAlign:"center"}}>
-        <h1>Error, Something went Wrong</h1>
-        <p>Redirecting back to g=homepage..</p>
+  return (
+    <div style={{ textAlign: "center" }}>
+      <h1>Error, Something went Wrong</h1>
+      <p>Redirecting back to homepage..</p>
     </div>
-  )
+  );
 }

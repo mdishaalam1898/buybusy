@@ -1,12 +1,9 @@
 import { SignIn } from "./pages/SignIn/SignIn";
 import { AuthContext } from "./contexts/authContext";
-import {
-  RouterProvider,
-  createBrowserRouter,
-} from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { SignUp } from "./pages/SignUp/SignUp";
 import Navbar from "./components/Navbar/Navbar";
-import { HomeInput } from "./pages/HomeInput/HomeInput";
+import { HomePage } from "./pages/HomePage/HomePage";
 import { MyOrder } from "./pages/MyOrder/MyOrder";
 import { Cart } from "./pages/Cart/Cart";
 import { ProductContext } from "./contexts/productContext";
@@ -19,7 +16,7 @@ function App() {
       element: <Navbar />,
       errorElement: <Error />,
       children: [
-        { index: true, element: <HomeInput /> },
+        { index: true, element: <HomePage /> },
         { path: "/myorder", element: <MyOrder /> },
         { path: "/cart", element: <Cart /> },
         { path: "/signin", element: <SignIn /> },
