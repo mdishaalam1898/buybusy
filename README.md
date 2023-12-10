@@ -1,6 +1,5 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# BuyBusy
+This is an online shopping / eCommerce website made using Reactjs, firebase database for storing data on cloud and ContextAPI for store state and creating functions. On this site any user can signUp and signIn in his/her account. A user can add or remove product from cart , he can increase or decrease product quantity and can place order. User data will be saved in firebase database, So the user can view his purchase history anytime.
 
 ## Available Scripts
 
