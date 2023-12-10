@@ -5,7 +5,7 @@ This is an online shopping / eCommerce website made using Reactjs, firebase data
 
 In the project directory, you can run:
 
-### `npm start`
+### `e-commerce-web-4fed57.netlify.app`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
