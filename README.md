@@ -63,7 +63,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 ### Deployment
 <link href="e-commerce-web-4fed57.netlify.app"/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Go Live to website: [https://e-commerce-web-4fed57.netlify.app/](https://e-commerce-web-4fed57.netlify.app/)
 
 ### `npm run build` fails to minify
 
