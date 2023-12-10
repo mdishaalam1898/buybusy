@@ -4,7 +4,7 @@ This is an online shopping / eCommerce website made using Reactjs, firebase data
 [Go live to website](https://e-commerce-web-4fed57.netlify.app/)
 
 ## Installation and running code
-
+#. Get the code on your machine.
 In the project directory, you can run:
 
 ### `e-commerce-web-4fed57.netlify.app`
