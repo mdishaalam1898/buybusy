@@ -12,19 +12,23 @@ This is an online shopping / eCommerce website made using Reactjs, firebase data
 6. user can see the output by opening following link http://localhost:3000/ on there browser.
 
 
-### Features
+### Features.
+1. A user can create his account.
+2. A user can signIn in his account.
+3. User can add multiple products to his cart by click on "add to cart" button.
+4. User can remove a specific product or all product at once from the cart.
+5. User can increase or decrease the quantity of a product.
+6. User can purchase all the product at once by clicking on purchase all.
+7. User can see his placed order history with date and time of order and list of all the product purchased with total amount.
+8. User data will be saved in database permanently so that he can see his order history any time.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
+### Tools and libraries
+1. ReactJs.
+2. Firebase Database.
+3. ContextAPI
+4. react-router-dom
+5. react-toastify
+6 .react-spinner
+7. CSS
 
