@@ -4,16 +4,13 @@ This is an online shopping / eCommerce website made using Reactjs, firebase data
 [Go live to website](https://e-commerce-web-4fed57.netlify.app/)
 
 ## Installation and running code
-<b>.</b> Get the code on your machine.
-In the project directory, you can run:
-
-### `e-commerce-web-4fed57.netlify.app`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Get the code on your machine.
+2. Navigate to the root directory of the code.
+3. Open command terminal.
+4. run command "npm install" to get all required dependencies.
+5. to run the code run the command "npm start" in your terminal.
+6. user can see the output by opening following link http://localhost:3000/ on there browser.
+<hr/>
 
 ### `npm test`
 
