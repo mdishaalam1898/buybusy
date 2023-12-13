@@ -26,9 +26,9 @@ This is an online shopping / eCommerce website made using Reactjs, firebase data
 ### Tools and libraries
 1. ReactJs.
 2. Firebase Database.
-3. ContextAPI
-4. react-router-dom
-5. react-toastify
-6 .react-spinner
-7. CSS
+3. ContextAPI.
+4. react-router-dom.
+5. react-toastify.
+6. react-spinner.
+7. CSS.
 
