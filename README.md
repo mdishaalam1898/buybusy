@@ -36,7 +36,8 @@ fetching data from database and to add notification to the app with ease respect
 2. Firebase Database.
 3. ContextAPI.
 4. react-router-dom.
-5. react-toastify.
-6. react-spinner.
-7. CSS.
+5. react-hooks
+6. react-toastify.
+7. react-spinner.
+8. CSS.
 
