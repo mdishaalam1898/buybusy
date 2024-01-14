@@ -1,5 +1,13 @@
 # BuyBusy
-This is an online shopping / eCommerce website made using Reactjs, firebase database for storing data on cloud and ContextAPI for store state and creating functions. On this site any user can signUp and signIn in his/her account. A user can add or remove product from cart , he can increase or decrease product quantity and can place order. User data will be saved in firebase database, So the user can view his purchase history anytime.
+_*Built an E-Commerce(Buybusy) website that enables individuals to browse available items, add or
+remove them from their shopping cart and complete the purchasing process .
+∗ Created and initialized the firestore and included it inside the project.
+∗ Created a register, login, home and cart pages that allows to register, login, search item and display the
+products that the user has added to the cart respectively.
+∗ Created a sidebar to filter the products based on the product price and categories on the home page.
+∗ Used seperate contexts to manage the user authentication state and product state.
+∗ Used third-party components react-spinners and react-toastify to display a circular loader when
+fetching data from database and to add notification to the app with ease respectively._
 
 [Go live to website](https://e-commerce-web-4fed57.netlify.app/)
 
