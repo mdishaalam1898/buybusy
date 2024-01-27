@@ -1,12 +1,12 @@
 # BuyBusy
-* Built an E-Commerce(Buybusy) website that enables individuals to browse available items, add or
+1. Built an E-Commerce(Buybusy) website that enables individuals to browse available items, add or
   remove them from their shopping cart and complete the purchasing process .<br/>
-∗ Created and initialized the firestore and included it inside the project.<br/>
-∗ Created a register, login, home and cart pages that allows to register, login, search item and display the
+2. Created and initialized the firestore and included it inside the project.<br/>
+3. Created a register, login, home and cart pages that allows to register, login, search item and display the
   products that the user has added to the cart respectively.<br/>
-∗ Created a sidebar to filter the products based on the product price and categories on the home page.<br/>
-∗ Used seperate contexts to manage the user authentication state and product state.<br/>
-∗ Used third-party components react-spinners and react-toastify to display a circular loader when
+4. Created a sidebar to filter the products based on the product price and categories on the home page.<br/>
+5. Used seperate contexts to manage the user authentication state and product state.<br/>
+6. Used third-party components react-spinners and react-toastify to display a circular loader when
   fetching data from database and to add notification to the app with ease respectively._<br/>
 
 [Go live to website](https://e-commerce-web-4fed57.netlify.app/)
